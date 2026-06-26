@@ -1,29 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
+import CinematicLoveForHer from "@/components/CinematicLoveForHer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Love For Her — A Novel by Tushar Tandwalia" },
+      {
+        name: "description",
+        content:
+          "A dark romantic thriller blending horror, mythology and revenge. Step into the realm of Draveen. Book One of an epic trilogy by Tushar Tandwalia.",
+      },
+      { property: "og:title", content: "Love For Her — A Novel by Tushar Tandwalia" },
+      { property: "og:description", content: "How far will you go for your love?" },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
+  return <CinematicLoveForHer />;
 }
