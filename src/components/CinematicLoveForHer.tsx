@@ -4,6 +4,7 @@ import bookCoverAsset from "@/assets/book-cover-full.jpeg.asset.json";
 import realmImg from "@/assets/realm-wide.jpg";
 import portalImg from "@/assets/portal.jpg";
 import silhouetteImg from "@/assets/silhouette.jpg";
+import authorPlaceholder from "@/assets/author.jpg";
 
 const COVER_URL = bookCoverAsset.url;
 // The uploaded asset is the FULL book wrap (back | spine | front).
@@ -1076,7 +1077,6 @@ function AuthorSection() {
   );
 }
 
-import authorPlaceholder from "@/assets/author.jpg";
 
 /* FINAL CTA */
 function FinalCTA() {
